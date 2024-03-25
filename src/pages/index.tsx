@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 
-const inter = Poppins({ weight: ["200"] , subsets:["latin"] });
+const poppins = Poppins({ weight: ["300"], subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div className={poppins.className}>
       <div className="bg-gray-800 text-white py-4 ">
         <h1 className="text-xl sm:text-xl md:text-xl lg:text-2xl ml-3 ">
           Home{" "}
@@ -26,6 +26,6 @@ export default function Home() {
           Signup
         </Link>
       </main>
-    </>
+    </div>
   );
 }
