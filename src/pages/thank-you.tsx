@@ -19,8 +19,8 @@ const ThankYouPage = () => {
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div className="max-w-lg w-full bg-white rounded-md p-8 ">
           <p className="text-center mb-6">
-            Thank you for the information you've entered! We've calculated your
-            personalized water intake.
+            Thank you for the information you&apos;ve entered! We&apos;ve
+            calculated your personalized water intake.
           </p>
 
           <p className="text-center text-gray-600">
