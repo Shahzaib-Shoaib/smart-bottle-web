@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 
-const poppins = Poppins({ weight: ["300"], subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["200", "300", "400"],
+  subsets: ["latin"],
+  style: ["normal"],
+});
 
 export default function Home() {
   return (
