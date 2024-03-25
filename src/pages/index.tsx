@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ weight: ["200"] , subsets:["latin"] });
 
 export default function Home() {
   return (
