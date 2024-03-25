@@ -49,7 +49,9 @@ const LoginPage: React.FC = () => {
           <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
             Login
           </h2>
-          <p className="py-2 text-gray-700 font-light">Welcome back, hope you're doing well</p>
+          <p className="py-2 text-gray-700 font-light">
+            Welcome back, hope you&apos;re doing well
+          </p>
 
           <div className="relative mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">
