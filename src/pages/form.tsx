@@ -1,4 +1,11 @@
 import Form from "@/components/Form";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["200", "300", "400"],
+  subsets: ["latin"],
+  style: ["normal"],
+});
 const LoginPage: React.FC = () => {
   function addFormHandler(formData: any) {
     fetch(
@@ -19,7 +26,7 @@ const LoginPage: React.FC = () => {
   }
 
   return (
-    <div className="">
+    <div className={poppins.className}>
       <Form onAddData={addFormHandler} />
     </div>
   );

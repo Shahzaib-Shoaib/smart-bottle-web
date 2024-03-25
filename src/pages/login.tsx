@@ -6,6 +6,13 @@ import CustomField from "../components/CustomField";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { signIn } from "../firebase/firebaseService";
 import { useRouter } from "next/router";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["200", "300", "400"],
+  subsets: ["latin"],
+  style: ["normal"],
+});
 
 const LoginPage: React.FC = () => {
   const passwordRef: any = useRef();
@@ -25,7 +32,7 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <>
+    <div className={poppins.className}>
       <div className="bg-gray-800 text-white py-4 ">
         <h1 className="text-xl sm:text-xl md:text-xl lg:text-2xl ml-3 ">
           Login Page
@@ -80,7 +87,7 @@ const LoginPage: React.FC = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

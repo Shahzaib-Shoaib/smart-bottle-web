@@ -4,6 +4,13 @@ import { useState, useEffect } from "react";
 import { useSignupFields } from "../data/fields";
 import Router, { useRouter } from "next/router";
 import { useRef } from "react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["200", "300", "400"],
+  subsets: ["latin"],
+  style: ["normal"],
+});
 export default function SignupPage() {
   //   const history = useHistory();
   const nameRef: any = useRef();
@@ -27,7 +34,7 @@ export default function SignupPage() {
   };
 
   return (
-    <>
+    <div className={poppins.className}>
       <div className="bg-gray-800 text-white py-4 ">
         <h1 className="text-xl sm:text-xl md:text-xl lg:text-2xl ml-3 ">
           Signup Page
@@ -92,6 +99,6 @@ export default function SignupPage() {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }

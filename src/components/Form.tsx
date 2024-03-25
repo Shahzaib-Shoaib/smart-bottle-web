@@ -82,12 +82,12 @@ function Form(props: any) {
           Form{" "}
         </h1>
       </div>
-      <div className="formContainer">
+      <div className="formContainer ">
         <form
           action="#"
           method="POST"
           onSubmit={submitHandler}
-          className="form"
+          className="form "
         >
           <div className="formGroup">
             <label htmlFor="personalized">
