@@ -79,7 +79,7 @@ function Form(props: any) {
     <>
       <div className="bg-gray-800 text-white py-4 ">
         <h1 className="text-xl sm:text-xl md:text-xl lg:text-2xl ml-3 ">
-          Form{" "}
+          Personalized Water Intake Calculator{" "}
         </h1>
       </div>
       <div className="formContainer ">
