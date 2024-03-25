@@ -22,6 +22,7 @@ const LoginPage: React.FC = () => {
       }
     ).then(() => {
       console.log("success");
+      window.location.reload();
     });
   }
 
