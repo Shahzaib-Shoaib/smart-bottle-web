@@ -37,7 +37,7 @@ const LoginPage: React.FC = () => {
     >
       <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 my-3 flex flex-col  w-full mt-10 md:mt-0">
         <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
-          Signup
+          Login
         </h2>
 
         <div className="relative mb-4">
@@ -66,10 +66,13 @@ const LoginPage: React.FC = () => {
           />
         </div>
 
-          <button type="submit" className="text-white bg-indigo-500 border-0 py-2 px-8 mt-3 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Submit
-          </button>
-        </div>
+        <button
+          type="submit"
+          className="text-white bg-indigo-500 border-0 py-2 px-8 mt-3 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          Submit
+        </button>
+      </div>
     </form>
   );
 };
