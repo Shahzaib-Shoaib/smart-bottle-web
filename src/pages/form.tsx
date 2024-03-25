@@ -1,5 +1,6 @@
 import Form from "@/components/Form";
 import { Poppins } from "next/font/google";
+import { useRouter } from "next/router";
 
 const poppins = Poppins({
   weight: ["200", "300", "400"],
@@ -7,6 +8,7 @@ const poppins = Poppins({
   style: ["normal"],
 });
 const LoginPage: React.FC = () => {
+  const router = useRouter();
   function addFormHandler(formData: any) {
     fetch(
       // "https://smart-waterbottle-c4d99-default-rtdb.firebaseio.com/data.json",
@@ -22,7 +24,7 @@ const LoginPage: React.FC = () => {
       }
     ).then(() => {
       console.log("success");
-      window.location.reload();
+      router.push("/thank-you");
     });
   }
 
